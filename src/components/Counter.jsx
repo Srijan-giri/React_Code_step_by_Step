@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navbar from "./layout/Navbar";
 import Footer from "./layout/Footer";
+import "../assets/css/style.css";
 
 function Counter() {
     const [count, setCount] = useState(0);
@@ -9,7 +10,7 @@ function Counter() {
             <header>
                 <Navbar />
             </header>
-            <main className="d-flex justify-content-center align-items-center vh-100">
+            <main className="d-flex justify-content-center align-items-center main-content">
                 <div className="container">
                     <div className="row">
                         <h1 className="text-center fw-bold" style={{fontSize:100, color:'blue'}}>{count}</h1>
