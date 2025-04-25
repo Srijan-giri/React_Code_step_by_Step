@@ -1,3 +1,5 @@
+import User from "./components/User";
+
 function App(){
   let userArray=[
     {
@@ -26,31 +28,16 @@ function App(){
    }];
   return(
     <div>
-      <h1>Loopp using in JSX</h1>
-      <table border="1">
-        <thead>
-          <tr>
-            <td>Id</td>
-            <td>Name</td>
-            <td>Email</td>
-            <td>Age</td>
-          </tr>
-        </thead>
-        <tbody>
-          {/* key is basically used to identify the each row in the table */}
-          {
-              userArray && 
-              userArray.map((user)=>(
-                <tr key={user.id}>
-                  <td>{user.id}</td>
-                  <td>{user.name}</td>
-                  <td>{user.email}</td>
-                  <td>{user.age}</td>
-                </tr>
-              ))
-          }
-        </tbody>
-      </table>
+      <h1>Reuse Component using loop in React</h1>
+      {
+        userArray &&
+        userArray.map((user)=>(
+          <div key={user.id}>
+             <User data={user}/>
+          </div>
+
+        ))
+      }
     </div>
   )
 }
