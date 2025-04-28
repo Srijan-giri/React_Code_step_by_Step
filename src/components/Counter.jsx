@@ -13,7 +13,7 @@ function Counter({counter,data}){
     },[counter]);
 
 
-    // Deleting
+    // Deleting or unmounting
     useEffect(()=>{
         return ()=>{
             console.log('Deleting or Unmounting Phase Only..........');
