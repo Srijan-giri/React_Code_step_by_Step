@@ -23,10 +23,15 @@ function App(){
   },[counter]);
 
 
-  // call only counter and data state is updated
+  // call only counter and data state are updated
   useEffect(()=>{
     dataFunction();
   },[counter,data]);
+
+  // call only props1 and props2 are updated
+  // useEffect(()=>{
+  //   //call something
+  // },[props1,props2]);
 
   function callEveryTime(){
     console.log("call every time of callEveryTime method")
