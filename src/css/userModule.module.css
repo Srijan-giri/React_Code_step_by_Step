@@ -1,0 +1,13 @@
+.img{
+    width:200px;
+}
+.divDesign{
+    border: 1px solid #ddd;
+    margin:10px;
+    width:200px;
+    box-shadow: 1px 1px 1px 0px #ddd;
+}
+
+.content{
+    padding: 5px;
+}
