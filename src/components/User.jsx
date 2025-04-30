@@ -1,10 +1,9 @@
-function User({user}){
-    const divColor = {border:'1px solid black',width:'200px', margin:'10px'}
+function User({user,cardStyle,textColor}){ 
     return(
         <div>
-            <div style={divColor}>
+            <div style={cardStyle}>
                 <img src="https://www.w3schools.com/howto/img_avatar.png" alt=""  style={{width:'200px'}}/>
-                <div style={{padding:'5px'}}>
+                <div style={{padding:'5px',color:textColor}}>
                     <h3>{user.name}</h3>
                     <h3>{user.position}</h3>
                 </div>
