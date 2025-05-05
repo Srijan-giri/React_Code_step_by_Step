@@ -46,9 +46,12 @@ function Counter({ counter }) {
 
 function Cup({ guest }) {
   // count = count + guest;
+
+  //* here count variable is declared inside the function component
+  let count = guest;
   return (
     <div>
-      <h2>We have {guest} guest and we have to make {guest} cups of tea.</h2>
+      <h2>We have {count} guest and we have to make {count} cups of tea.</h2>
     </div>
   )
 }
