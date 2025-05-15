@@ -20,7 +20,11 @@ function App() {
         <Route path="/login" element={<Login />}>Login</Route>
 
         // Making 404 Not Found Page
-        {/* c */}
+        {/* 
+
+           <Route path="/*" element={<NotFound/>} ></Route>
+
+        */}
 
         // Using Navigate Component for wrong route request
         <Route path="/*" element={<Navigate to={'/login'} />} ></Route>
