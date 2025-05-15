@@ -11,9 +11,9 @@ function Navbar() {
                 <div>
                     <ul>
                         <li><Link to={'/'} className='link'>Home</Link></li>
-                        <li><Link to={'/about'} className='link'>About</Link></li>
-                        <li><Link to={'/contact'} className='link'>Contact</Link></li>
-                        <li><Link to={'/login'} className='link'>Login</Link></li>
+                        <li><Link to={'/in/user/about'} className='link'>About</Link></li>
+                        <li><Link to={'/in/user/contact'} className='link'>Contact</Link></li>
+                        <li><Link to={'/in/user/login'} className='link'>Login</Link></li>
                         <li><Link to={'/college'} className="link">College</Link></li>
                     </ul>
                 </div>
