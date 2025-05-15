@@ -16,7 +16,8 @@ body {
     display: flex;
     margin: auto;
     justify-content: space-around;
-    width: 250px;
+    /* max-width: 100%; */
+    width: 307px;
 }
 
 .header ul li {
@@ -31,3 +32,21 @@ body {
     margin: 0px;
 }
 
+
+.college {
+    text-align: center;
+}
+
+
+.college .nav-link {
+    text-decoration: none;
+
+    margin: 10px;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+
+.college .nav-link:hover {
+    text-decoration: underline;
+}
