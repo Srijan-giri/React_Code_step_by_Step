@@ -30,7 +30,6 @@ function App() {
         {/* I want that when i click on the college link it should open the student  page */}
 
         <Route path="/college" element={<College />}>
-          {/* <Route path="student" element={<Student />}></Route>  by default student component is showing */}
 
           {/* index route */}
           <Route index element={<Student />}></Route>

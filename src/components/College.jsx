@@ -14,6 +14,9 @@ function College() {
                 <Outlet />
 
                 {/*  An <Outlet/> should be used in parent route elements to render their child route elements */}
+
+
+                {/* Link vs NavLink */}
             </div>
 
 
