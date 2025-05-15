@@ -1,10 +1,11 @@
-import { Routes, Route } from "react-router";
+import { Routes, Route, Navigate } from "react-router";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Login from "./components/Login";
 import Navbar from "./components/Navbar";
 import '../public/app.css'
 import Home from "./components/Home";
+import NotFound from "./components/NotFound";
 
 
 function App() {
@@ -17,13 +18,24 @@ function App() {
         <Route path="/about" element={<About />}></Route>
         <Route path="/contact" element={<Contact />}>Contact</Route>
         <Route path="/login" element={<Login />}>Login</Route>
+
+        // Making 404 Not Found Page
+        {/* 
+
+           <Route path="/*" element={<NotFound/>} ></Route>
+
+        */}
+
+        // Using Navigate Component for wrong route request
+        <Route path="/*" element={<Navigate to={'/login'} />} ></Route>
+
       </Routes>
 
 
 
 
 
-    </div>
+    </div >
   )
 }
 
