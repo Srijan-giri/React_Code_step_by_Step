@@ -11,18 +11,29 @@ import Department from "./components/Department";
 import StudentDetails from "./components/StudentDetails";
 
 
+
 function App() {
   return (
     <div>
 
-      <Navbar />
+      {/* <Navbar /> */}
       <Routes>
-        <Route path="/" element={<Home />}>Home</Route>
-        <Route path="/about" element={<About />}></Route>
-        <Route path="/contact" element={<Contact />}>Contact</Route>
-        <Route path="/login" element={<Login />}>Login</Route>
+
+        {/* Route Layout is used to create header and footer and also remove the header footer from the page */}
+        <Route element={<Navbar />}>
+          <Route path="/" element={<Home />}>Home</Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/contact" element={<Contact />}>Contact</Route>
+          <Route path="/login" element={<Login />}>Login</Route>
+        </Route>
+
+        {/* I want that when i click on the college link it should open the student  page */}
+
         <Route path="/college" element={<College />}>
-          <Route path="student" element={<Student />}></Route>
+          {/* <Route path="student" element={<Student />}></Route>  by default student component is showing */}
+
+          {/* index route */}
+          <Route index element={<Student />}></Route>
           <Route path="department" element={<Department />}></Route>
           <Route path="student-details" element={<StudentDetails />}></Route>
         </Route>
