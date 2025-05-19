@@ -1,0 +1,52 @@
+.header {
+    background-color: #d6d6ff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.header ul {
+    list-style-type: none;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    /* max-width: 100%; */
+    width: 408px;
+}
+
+.header ul li {
+    padding: 10px;
+}
+
+.header .link {
+    text-decoration: none;
+}
+
+.header .link h2 {
+    margin: 0px;
+}
+
+
+.college {
+    text-align: center;
+}
+
+
+.college .nav-link {
+    text-decoration: none;
+
+    margin: 10px;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+
+.college .nav-link:hover {
+    text-decoration: underline;
+}
