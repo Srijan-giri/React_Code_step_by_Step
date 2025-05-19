@@ -50,3 +50,7 @@ body {
 .college .nav-link:hover {
     text-decoration: underline;
 }
+
+.active {
+    font-weight: 800;
+}

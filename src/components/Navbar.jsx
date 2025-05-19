@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Outlet } from 'react-router'
+import { Link, NavLink, Outlet } from 'react-router'
 
 function Navbar() {
     return (
@@ -10,13 +10,16 @@ function Navbar() {
                 </div>
                 <div>
                     <ul>
-                        <li><Link to={'/'} className='link'>Home</Link></li>
-                        <li><Link to={'/about'} className='link'>About</Link></li>
-                        <li><Link to={'/contact'} className='link'>Contact</Link></li>
-                        <li><Link to={'/login'} className='link'>Login</Link></li>
-                        <li><Link to={'/college'} className="link">College</Link></li>
-                        <li><Link to={'/users'} className='link'>Users</Link></li>
-                        <li><Link to={'/users/list'} className='link'>List</Link></li>
+                        {/* NavLink vs Link  */}
+                        {/* NavLink is a navigation link that has active class and Link is a navigation link that doesn't have active class */}
+
+                        <li><NavLink to={'/'} className='link'>Home</NavLink></li>
+                        <li><NavLink to={'/about'} className='link'>About</NavLink></li>
+                        <li><NavLink to={'/contact'} className='link'>Contact</NavLink></li>
+                        <li><NavLink to={'/login'} className='link'>Login</NavLink></li>
+                        <li><NavLink to={'/college'} className="link">College</NavLink></li>
+                        <li><NavLink to={'/users'} className='link'>Users</NavLink></li>
+                        <li><NavLink to={'/users/list'} className='link'>List</NavLink></li>
                     </ul>
                 </div>
             </div>
